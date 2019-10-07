@@ -15,6 +15,9 @@
 /dev/cpuset(/.*)?                                       u:object_r:cgroup:s0
 /dev/stune(/.*)?                                        u:object_r:cgroup:s0
 
+# Rootfs files
+/tombstones                                                                          u:object_r:rootfs:s0
+
 # Sysfs nodes
 /sys/devices/qpnp-bms-10/power_supply/bms(/.*)?         u:object_r:sysfs_battery_supply:s0
 
