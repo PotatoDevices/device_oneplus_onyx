@@ -68,9 +68,6 @@ BOARD_KERNEL_CMDLINE += androidboot.btmacaddr=00:00:00:00:00:00
 #TARGET_KERNEL_GCC_COMPILE := true
 #TARGET_USE_LATEST_GCC := true
 
-# Fixes Wifi-Mobile Data toggle issue
-MALLOC_SVELTE := true
-
 # ANT+
 BOARD_ANT_WIRELESS_DEVICE := "vfs-prerelease"
 
@@ -97,6 +94,7 @@ BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(PLATFORM_PATH)/bluetooth
 BOARD_HAVE_BLUETOOTH_QCOM := true
 
 # Camera
+MALLOC_SVELTE_FOR_LIBC32 := true
 USE_DEVICE_SPECIFIC_CAMERA := true
 TARGET_PROCESS_SDK_VERSION_OVERRIDE := \
     /system/bin/mediaserver=22 \
