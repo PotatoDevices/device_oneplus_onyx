@@ -24,6 +24,11 @@ BUILD_BROKEN_DUP_RULES := true
 BUILD_BROKEN_USES_BUILD_COPY_HEADERS := true
 BUILD_BROKEN_VINTF_PRODUCT_COPY_FILES := true
 
+#PRODUCT_BOARD_PLATFORM := msm8974
+
+#PRODUCT_USES_QCOM_HARDWARE := true
+
+
 # Include path
 TARGET_SPECIFIC_HEADER_PATH := $(PLATFORM_PATH)/include
 
@@ -58,8 +63,8 @@ TARGET_KERNEL_ARCH := arm
 TARGET_KERNEL_CONFIG := onyx_defconfig
 TARGET_KERNEL_SOURCE := kernel/oneplus/onyx
 BOARD_KERNEL_CMDLINE += androidboot.btmacaddr=00:00:00:00:00:00
-TARGET_KERNEL_CROSS_COMPILE_PREFIX := arm-eabi-
-KERNEL_TOOLCHAIN := $(PWD)/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/bin
+#TARGET_KERNEL_CROSS_COMPILE_PREFIX := arm-eabi-
+#KERNEL_TOOLCHAIN := $(PWD)/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/bin
 #TARGET_KERNEL_GCC_COMPILE := true
 #TARGET_USE_LATEST_GCC := true
 
@@ -156,7 +161,6 @@ PRODUCT_ENFORCE_VINTF_MANIFEST_OVERRIDE := true
 # Legacy memfd
 TARGET_HAS_MEMFD_BACKPORT := true
 
-
 # Init
 TARGET_INIT_VENDOR_LIB := libinit_onyx
 TARGET_RECOVERY_DEVICE_MODULES := libinit_onyx
@@ -196,7 +200,7 @@ TARGET_LD_SHIM_LIBS := \
     /system/vendor/lib/libril-qc-qmi-1.so|libaudioclient_shim.so \
     /system/vendor/lib/mediadrm/libwvdrmengine.so|libprotobuf_shim.so \
     /system/vendor/lib/libmmcamera2_stats_algorithm.so|libshims_atomic.so
-   
+
 # Vendor security patch level
 VENDOR_SECURITY_PATCH := 2016-11-10
 
