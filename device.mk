@@ -151,8 +151,8 @@ PRODUCT_PACKAGES += \
     librmnetctl
 
 # Doze
-#PRODUCT_PACKAGES += \
-#   OnyxDoze
+PRODUCT_PACKAGES += \
+   OnyxDoze
 
 # DRM
 PRODUCT_PACKAGES += \
@@ -255,9 +255,9 @@ PRODUCT_PACKAGES += \
     libnl_2 \
     libtinyxml
 
-# OnyxParts
-#PRODUCT_PACKAGES += \
- #   OnyxParts
+# DeviceSettings
+PRODUCT_PACKAGES += \
+    DeviceSettings
     
 # Power
 PRODUCT_PACKAGES += \
