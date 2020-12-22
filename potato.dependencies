@@ -6,9 +6,5 @@
   {
     "repository" : "vendor_oneplus_onyx",
     "target_path": "vendor/oneplus/onyx"
-  },
-  {
-    "repository" : "device_oppo_common",
-    "target_path": "device/oppo/common"
   }
 ]
