@@ -15,6 +15,9 @@
 /dev/cpuset(/.*)?                                       u:object_r:cgroup:s0
 /dev/stune(/.*)?                                        u:object_r:cgroup:s0
 
+# Persist files
+/persist/sns.reg                                        u:object_r:sensors_persist_file:s0
+
 # Rootfs files
 /tombstones                                                                          u:object_r:rootfs:s0
 
