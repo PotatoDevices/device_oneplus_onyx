@@ -21,7 +21,5 @@
 # Light HAL
 /system/vendor/bin/hw/android\.hardware\.light@2\.0-service\.onyx                  u:object_r:hal_light_default_exec:s0
 
-/firmware(/.*)?        u:object_r:firmware_file:s0
-
 # Gatekeeper
 /system/vendor/bin/hw/android\.hardware\.gatekeeper@1\.0-service\.software         u:object_r:hal_gatekeeper_default_exec:s0
