@@ -18,10 +18,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
-	$(LOCAL_PATH)/overlay 
+     $(LOCAL_PATH)/overlay 
 
-#PRODUCT_ENFORCE_RRO_TARGETS := \
-#    framework-res
+PRODUCT_ENFORCE_RRO_TARGETS := *
 
 LAWNCHAIR_OPTOUT := true
 SOUNDPICKER_10 := true
@@ -78,10 +77,10 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/privapp-permissions-qti.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-qti.xml
 
 # ANT+
-#PRODUCT_PACKAGES += \
-#    AntHalService \
-#    com.dsi.ant.antradio_library \
-#    libantradio
+PRODUCT_PACKAGES += \
+    AntHalService \
+    com.dsi.ant.antradio_library \
+    libantradio
 
 # APEX
 PRODUCT_COPY_FILES += \
