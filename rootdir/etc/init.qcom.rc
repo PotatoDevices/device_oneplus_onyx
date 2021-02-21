@@ -502,14 +502,5 @@ service ril-daemon1 /vendor/bin/hw/rild -c 2
     group radio cache inet misc audio log readproc wakelock
     capabilities BLOCK_SUSPEND NET_ADMIN NET_RAW
 
-# Logcat
-service logger /system/bin/logcat -b all -D -f /cache/boot_log.txt
-    class main
-    user root
-    group root system
-    disabled
-    oneshot
-
-
 on property:apexd.status=ready
     mount none /system/etc/swcodec/ld.config.txt /apex/com.android.media.swcodec/etc/ld.config.txt bind
