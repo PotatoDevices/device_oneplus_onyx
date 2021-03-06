@@ -331,10 +331,6 @@ on post-fs-data
 
     # Camera sockets
     mkdir /data/misc/camera 0770 camera camera
-
-    # Clear existing log and start the service
-    rm /cache/boot_log.txt
-    start logger
     
 on fs
     wait /dev/block/platform/${ro.boot.bootdevice}
