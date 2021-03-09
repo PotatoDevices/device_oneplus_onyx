@@ -68,6 +68,9 @@ BOARD_KERNEL_CMDLINE += androidboot.btmacaddr=00:00:00:00:00:00
 #TARGET_KERNEL_GCC_COMPILE := true
 #TARGET_USE_LATEST_GCC := true
 
+# Fixes Wifi-Mobile Data toggle issue
+MALLOC_SVELTE := true 
+
 # ANT+
 BOARD_ANT_WIRELESS_DEVICE := "vfs-prerelease"
 
